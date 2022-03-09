@@ -1,0 +1,28 @@
+{
+  "name": "cypress-xhr-testing",
+  "version": "1.0.0",
+  "description": "Automating XHR requests and responses",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahlep/cypress-xhr-testing.git"
+  },
+  "keywords": [
+    "Automation",
+    "Cypress",
+    "XHR"
+  ],
+  "author": "Shah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shahlep/cypress-xhr-testing/issues"
+  },
+  "homepage": "https://github.com/shahlep/cypress-xhr-testing#readme",
+  "dependencies": {
+    "cypress": "^9.5.1"
+  }
+}
