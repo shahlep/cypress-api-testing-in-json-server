@@ -26,8 +26,8 @@ describe('XHR tests', () => {
       it.only('XHR test for POST', () => {
         cy.intercept('POST','/comments').as('postComment')
 
-        cy.get('.network-btn').click()
-
+        cy.get('.network-post').click()
+        
         cy.wait('@postComment').should(({ request, response }) => {
           console.log(request)
           expect(request.body).to.include('email')
@@ -37,7 +37,7 @@ describe('XHR tests', () => {
 
           expect(request.headers).to.have.property('content-type')
           //expect(response && response.body).to.have.property('name', 'Using POST in cy.intercept()')
-          expect(request.headers).to.have.property('origin','https://example.cypress.io/')
+          expect(request.headers).to.have.property('origin','https://example.cypress.io')
         })
       })
 })
